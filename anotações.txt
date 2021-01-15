@@ -1,0 +1,40 @@
+yarn add express
+yarn add nodemon -D
+
+
+
+nodemon = 
+
+
+Métodos HTTP;
+  GET:    -> buscar informações do back-end;
+  POST:   -> criar  informação no back-end;
+  PUT:    -> com o id, alterar informação;
+  PATCH:  -> com o id, alterar informação 
+  (algo bem específico)
+  DELETE: -> com o id, deletar uma informação.
+;
+
+IDENTIFICADORES UNICOS = ID
+
+app.put('/project:id', (request, response) => {
+  return response.json(['Hello World', 'Olá mundo', 'HI WORDI']);
+});
+
+~~
+
+Tipos de Parâmetros.
+
+  Query Params: -> "const query = request.query;"
+    EX:  app.get('/projects', (request, response) => {
+          const query = request.query;
+          return response.json(['projeto 1', 'projeto 2']);
+        });
+
+      Expressão do Query Params desestruturada;
+        const {title, owner} = request.query;
+
+
+
+  Route Params: ->
+  Request Body: ->
